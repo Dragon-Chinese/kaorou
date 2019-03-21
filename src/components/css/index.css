@@ -1,0 +1,306 @@
+.Sindex {
+    background: url('../../static/indexbg.png') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.jxw {
+    background: url('../../static/jixiangwu.png') center no-repeat;
+    background-size: cover;
+    height: 2.74rem;
+    width: 2.61rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.next {
+    height: .62rem;
+    width: 1.2rem;
+    background: url('../../static/next.png') center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    margin-left: -.6rem;
+    animation: demo 1s infinite;
+}
+
+@keyframes demo {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(0, .24rem);
+    }
+
+    75% {
+        transform: translate(0, .12rem);
+    }
+
+    100% {
+        transform: translate(0, .0rem);
+    }
+}
+
+
+
+.Mindex {
+    height: 100%;
+    ;
+    position: relative;
+}
+
+.Mindex .mc {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../../static/mc.png') no-repeat center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.Mindex .mc span {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    z-index: 1;
+    background: url('../../static/close.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    bottom: .5rem;
+    margin-left: -.5rem;
+}
+
+.Mindex .top {
+    height: 5rem;
+    width: 100%;
+    background: url('../../static/top.png') no-repeat center;
+    background-size: cover;
+}
+
+.Mindex .click {
+    height: 1rem;
+    position: relative;
+}
+
+.Mindex .click .wz {
+    height: .4rem;
+    width: 3.62rem;
+    background: url('../../static/jj.png') no-repeat center;
+    background-size: 100%;
+    margin-left: .2rem;
+    margin-top: .2rem;
+}
+
+.Mindex .click .huo {
+    position: absolute;
+    right: .2rem;
+    top: -.05rem;
+    display: flex;
+}
+
+.Mindex .click .huo img {
+    display: block;
+    width: .3rem;
+    height: .4rem;
+    margin-right: .1rem;
+    border: none;
+}
+
+img[src=""],
+img:not([src]) {
+    opacity: 0;
+}
+
+.ant-slider {
+    width: 1.3rem;
+    position: absolute !important;
+    right: 1.7rem !important;
+    top: -.2rem !important;
+}
+
+.ant-slider-track {
+    background: #663210 !important;
+}
+
+.ant-slider-handle {
+    background: #FF902F !important;
+    border-color: #FF902F !important;
+}
+
+.ant-slider:hover {
+    box-shadow: none !important;
+}
+
+/* #FF902F */
+/* #663210 */
+.Mindex .bot {
+    height: 3.5rem;
+    width: 6.39rem;
+    background: url('../../static/kl.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    margin-left: -3.195rem;
+}
+
+.Mindex .swiper-container2 {
+    height: 1.8rem;
+    margin-top: .5rem;
+}
+
+
+
+.Mindex .swiper-container2 img {
+    height: 2rem;
+    width: 1.8rem;
+    overflow: hidden;
+    margin-left: .5rem;
+}
+
+
+
+.Slist {
+    height: 140%;
+}
+
+.Slist h2 {
+    width: 2rem;
+    height: .5rem;
+    background: url('../../static/sclb.png') no-repeat center;
+    background-size: contain;
+    margin-left: .3rem;
+    margin-top: .3rem;
+}
+
+.Slist ul {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 0;
+}
+
+.Slist ul li {
+    display: flex;
+    flex-direction: column;
+    /* height: 2rem; */
+    float: left;
+    margin-top: 0.36rem;
+    z-index: 11;
+    margin-left: .67rem;
+    margin-top: .7rem;
+}
+
+
+.Slist ul li img:nth-child(1) {
+    height: 1.1rem;
+    width: 1.6rem;
+    overflow: hidden;
+}
+
+.Slist ul li img:nth-child(2) {
+    display: inline-block;
+    height: .5rem;
+    width: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Sdetail {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.Sdetail p {
+    height: .8rem;
+    width: .7rem;
+    background: url('../../static/sc/detail/return.png') no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: .3rem;
+    top: .2rem;
+}
+
+.Sdetail.Sdetail1 {
+    background: url('../../static/sc/detail/1.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail2 {
+    background: url('../../static/sc/detail/2.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail3 {
+    background: url('../../static/sc/detail/3.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail4 {
+    background: url('../../static/sc/detail/4.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail5 {
+    background: url('../../static/sc/detail/5.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail6 {
+    background: url('../../static/sc/detail/6.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail7 {
+    background: url('../../static/sc/detail/7.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail8 {
+    background: url('../../static/sc/detail/8.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail9 {
+    background: url('../../static/sc/detail/9.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail10 {
+    background: url('../../static/sc/detail/10.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail11 {
+    background: url('../../static/sc/detail/11.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail12 {
+    background: url('../../static/sc/detail/12.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail13 {
+    background: url('../../static/sc/detail/13.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail14 {
+    background: url('../../static/sc/detail/14.png') no-repeat center;
+    background-size: cover;
+}
+
+.Sdetail.Sdetail15 {
+    background: url('../../static/sc/detail/15.png') no-repeat center;
+    background-size: cover;
+}
