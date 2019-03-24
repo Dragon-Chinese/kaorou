@@ -25,7 +25,7 @@ export default class index extends Component {
     super(props)
     this.state = {
       Mshow: true,
-      inputValue: 1
+      inputValue: 3
     }
   }
   componentWillMount() {
@@ -65,9 +65,23 @@ export default class index extends Component {
 
   onChange = value => {
     console.log(value)
-    this.setState({
-      inputValue: value
-    })
+    this.setState(
+      {
+        inputValue: value
+      },
+      () => {
+        if (this.state.inputValue != 3) return
+        new Swiper('.swiper-container2', {
+          autoplay: {
+            delay: 1200,
+            stopOnLastSlide: false,
+            autoplayDisableOnInteraction: false,
+            disableOnInteraction: false
+          },
+          loop: true
+        })
+      }
+    )
   }
 
   render() {
@@ -97,123 +111,143 @@ export default class index extends Component {
           </div>
         </div>
         <div className="swiper-container2">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img
-                src={t1}
-                onClick={() => {
-                  this.pro(1)
-                }}
-                alt=""
-              />
-              <img
-                src={t2}
-                onClick={() => {
-                  this.pro(2)
-                }}
-                alt=""
-              />
-              <img
-                src={t3}
-                onClick={() => {
-                  this.pro(3)
-                }}
-                alt=""
-              />
+          {this.state.inputValue === 2 ? (
+            <div className="swiper-wrapper">
+              <div className="swiper-slide two">
+                <img
+                  src={t6}
+                  onClick={() => {
+                    this.pro(6)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t10}
+                  onClick={() => {
+                    this.pro(10)
+                  }}
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="swiper-slide">
-              <img
-                src={t4}
-                onClick={() => {
-                  this.pro(4)
-                }}
-                alt=""
-              />
-              <img
-                src={t5}
-                onClick={() => {
-                  this.pro(5)
-                }}
-                alt=""
-              />
-              <img
-                src={t6}
-                onClick={() => {
-                  this.pro(6)
-                }}
-                alt=""
-              />
+          ) : (
+            ''
+          )}
+
+          {this.state.inputValue === 3 ? (
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <img
+                  src={t1}
+                  onClick={() => {
+                    this.pro(1)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t2}
+                  onClick={() => {
+                    this.pro(2)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t3}
+                  onClick={() => {
+                    this.pro(3)
+                  }}
+                  alt=""
+                />
+              </div>
+              <div className="swiper-slide">
+                <img
+                  src={t4}
+                  onClick={() => {
+                    this.pro(4)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t5}
+                  onClick={() => {
+                    this.pro(5)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t15}
+                  onClick={() => {
+                    this.pro(15)
+                  }}
+                  alt=""
+                />
+              </div>
+              <div className="swiper-slide">
+                <img
+                  src={t7}
+                  onClick={() => {
+                    this.pro(7)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t8}
+                  onClick={() => {
+                    this.pro(8)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t9}
+                  onClick={() => {
+                    this.pro(9)
+                  }}
+                  alt=""
+                />
+              </div>
+              <div className="swiper-slide">
+                <img
+                  src={t11}
+                  onClick={() => {
+                    this.pro(11)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t12}
+                  onClick={() => {
+                    this.pro(12)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={t14}
+                  onClick={() => {
+                    this.pro(14)
+                  }}
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="swiper-slide">
-              <img
-                src={t7}
-                onClick={() => {
-                  this.pro(7)
-                }}
-                alt=""
-              />
-              <img
-                src={t8}
-                onClick={() => {
-                  this.pro(8)
-                }}
-                alt=""
-              />
-              <img
-                src={t9}
-                onClick={() => {
-                  this.pro(9)
-                }}
-                alt=""
-              />
+          ) : (
+            ''
+          )}
+
+          {this.state.inputValue === 1 ? (
+            <div className="swiper-wrapper">
+              <div className="swiper-slide three">
+                <img
+                  src={t13}
+                  onClick={() => {
+                    this.pro(13)
+                  }}
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="swiper-slide">
-              <img
-                src={t10}
-                onClick={() => {
-                  this.pro(10)
-                }}
-                alt=""
-              />
-              <img
-                src={t11}
-                onClick={() => {
-                  this.pro(11)
-                }}
-                alt=""
-              />
-              <img
-                src={t12}
-                onClick={() => {
-                  this.pro(12)
-                }}
-                alt=""
-              />
-            </div>
-            <div className="swiper-slide">
-              <img
-                src={t13}
-                onClick={() => {
-                  this.pro(13)
-                }}
-                alt=""
-              />
-              <img
-                src={t14}
-                onClick={() => {
-                  this.pro(14)
-                }}
-                alt=""
-              />
-              <img
-                src={t15}
-                onClick={() => {
-                  this.pro(15)
-                }}
-                alt=""
-              />
-            </div>
-          </div>
+          ) : (
+            ''
+          )}
         </div>
         <div className="bot" />
       </div>
