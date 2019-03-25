@@ -37,6 +37,21 @@ export default class index extends Component {
     this.state = {
       proList: [
         {
+          tlink: t7,
+          zlink: z7,
+          ind: 7
+        },
+        {
+          tlink: t8,
+          zlink: z8,
+          ind: 8
+        },
+        {
+          tlink: t9,
+          zlink: z9,
+          ind: 9
+        },
+        {
           tlink: t1,
           zlink: z1,
           ind: 1
@@ -65,21 +80,6 @@ export default class index extends Component {
           tlink: t6,
           zlink: z6,
           ind: 6
-        },
-        {
-          tlink: t7,
-          zlink: z7,
-          ind: 7
-        },
-        {
-          tlink: t8,
-          zlink: z8,
-          ind: 8
-        },
-        {
-          tlink: t9,
-          zlink: z9,
-          ind: 9
         },
         {
           tlink: t10,
