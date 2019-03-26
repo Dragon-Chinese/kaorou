@@ -172,10 +172,10 @@ img:not([src]) {
 }
 .Mindex .swiper-container2 .swiper-wrapper .swiper-slide div img:nth-child(2) {
     margin-top: .2rem;
-    height: .7rem;
-    width: 1.8rem;
+    height: .5rem;
+    width: 1rem;
     overflow: hidden;
-    margin-left: .5rem;
+    margin-left: .9rem;
 }
 
 .Mindex .swiper-container2 .three {
