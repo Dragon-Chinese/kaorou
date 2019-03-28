@@ -129,48 +129,23 @@ export default class index extends Component {
         <div className="swiper-container2">
           {this.state.inputValue === 2 ? (
             <div className="swiper-wrapper">
-              <div className="swiper-slide two">
-                <div><img
-                  src={t6}
-                  onClick={() => {
-                    this.pro(6)
-                  }}
-                  alt=""
-                />
-                <img
-                  src={z6}
-                  onClick={() => {
-                    this.pro(6)
-                  }}
-                  alt=""
-                />
-                </div>
+              <div className="swiper-slide three">
                 <div>
                 <img
-                  src={t10}
+                  src={t13}
                   onClick={() => {
-                    this.pro(10)
+                    this.pro(13)
                   }}
                   alt=""
                 />
                 <img
-                  src={z10}
+                  src={z13}
                   onClick={() => {
-                    this.pro(10)
+                    this.pro(13)
                   }}
                   alt=""
                 />
                 </div>
-                
-              </div>
-            </div>
-          ) : (
-            ''
-          )}
-
-          {this.state.inputValue === 3 ? (
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
                 <div><img
                   src={t1}
                   onClick={() => {
@@ -184,6 +159,15 @@ export default class index extends Component {
                     this.pro(1)
                   }}/>
                 </div>
+              </div>
+            </div>
+          ) : (
+            ''
+          )}
+
+          {this.state.inputValue === 3 ? (
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
                 <div><img
                   src={t2}
                   onClick={() => {
@@ -343,19 +327,37 @@ export default class index extends Component {
 
           {this.state.inputValue === 1 ? (
             <div className="swiper-wrapper">
-              <div className="swiper-slide three">
+              <div className="swiper-slide  two">
               <div>
-              <img
-                  src={t13}
+              
+
+                  <img
+                  src={t6}
                   onClick={() => {
-                    this.pro(13)
+                    this.pro(6)
                   }}
                   alt=""
                 />
                 <img
-                  src={z13}
+                  src={z6}
                   onClick={() => {
-                    this.pro(13)
+                    this.pro(6)
+                  }}
+                  alt=""
+                />
+                </div>
+                <div>
+                <img
+                  src={t10}
+                  onClick={() => {
+                    this.pro(10)
+                  }}
+                  alt=""
+                />
+                <img
+                  src={z10}
+                  onClick={() => {
+                    this.pro(10)
                   }}
                   alt=""
                 />
